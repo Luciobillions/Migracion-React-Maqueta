@@ -1,0 +1,172 @@
+/* Para que se respeten los heigth width */
+* {
+    box-sizing: border-box;
+
+}
+
+#marco-general {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: url("https://www.infobae.com/new-resizer/-zqFipJ4lnCkqIYOtrqxkgJr6AQ=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/H5EP2HSF3RCURNLRXOETIZZEM4.jpg");
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+
+
+}
+
+div .icono {
+    width: 100px;
+    height: 100px;
+
+}
+
+div .icono img {
+    width: 100px;
+
+    position: relative;
+    border-radius: 50%;
+    color: #4c5b5e;
+}
+
+div .ico img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+form {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 85px;
+
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+
+}
+
+/* para que el texte area no se escape de la pantalla */
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    outline: 0px;
+    background-color: rgb(49, 108, 197);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside-form {
+    flex: 30px;
+    background-color: rgb(241, 241, 229);
+    padding: 20px;
+}
+
+.section-form {
+    flex: 70%;
+    color: black;
+    background-color: rgb(255, 255, 253);
+    pad: 20px;
+
+}
+
+.section-form img {
+    width: 100%;
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+ }
+ .caja-text{
+    padding: 15px;
+ }
+ .logos-spon img{
+    width: 30px;
+    height: 30px;
+ }
+@media screen and (max-width: 700px) {
+
+    nav,
+    .row {
+        flex-direction: column;
+    }
+}
